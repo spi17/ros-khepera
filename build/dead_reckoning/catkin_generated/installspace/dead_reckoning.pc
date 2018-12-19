@@ -1,0 +1,8 @@
+prefix=/home/santi/khepera_ws/install
+
+Name: dead_reckoning
+Description: Description of dead_reckoning
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/santi/khepera_ws/install/lib 
+Requires: 

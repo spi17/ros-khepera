@@ -1,0 +1,63 @@
+<!-- -->
+
+<launch>
+
+	<!--node pkg="mocap_optitrack" type="mocap_node" name="mocap_node" respawn="false" launch-prefix="" required="true" output="screen">
+		<rosparam file="$(find mocap_optitrack)/config/params_multi2.yaml" command="load" />
+	</node-->
+	
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find base_controller)/map/mapa.yaml" >
+		<!--param name="frame_id" value="/world"/-->
+	</node>	
+	
+	<!--KHEPERA-->
+
+	<node pkg="base_controller" type="base_controller" args="192.168.1.2 3090" name="base_controller">
+		<!--remap from="cmd_vel" to="/cmd_vel" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" -->
+	</node>
+		
+	<node pkg="odometry_node" type="odometry_node" args="khepera" name="odometry_node" >
+		<!--remap from="pose" to="/pose" >
+		<remap from="odom" to="/odom" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" -->
+	</node>
+
+	<node pkg="sensor_node" type="sensor_node" args="3091 khepera"  name="sensor_node" output="screen">	
+		<!--remap from="scan" to="/scan_IR" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" /-->
+	</node>
+
+	<node pkg="dead_reckoning" type="dead_reckoning" args="3093 khepera" name="dead_reckoning" >
+		<!--remap from="pose" to="/pose" -->
+	</node>
+
+		<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+			<!--remap from="map" to="/Global_Cost" /-->
+			<rosparam file="/home/santi/khepera_ws/src/navigation/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+			<rosparam file="/home/santi/khepera_ws/src/navigation/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+			<rosparam file="/home/santi/khepera_ws/src/navigation/config/local_costmap_params.yaml" command="load" />
+			<rosparam file="/home/santi/khepera_ws/src/navigation/config/global_costmap_params.yaml" command="load" />
+			<rosparam file="/home/santi/khepera_ws/src/navigation/config/base_local_planner_params.yaml" command="load" />
+		</node>	
+
+	<!--node pkg="place_robot_node" type="place_robot_node_multi" args="khepera2"  name="place_robot_node2"  /-->
+		
+	<!--node pkg="Cost_Manager" type="CostManager" name="CostManager" respawn="true">
+		<remap from="obstacle_pose" to="khepera/obstacle_pose" />
+		<param name="map_topic" value="/map"/>
+		<param name="global_map_topic" value="/khepera/Global_Cost"/>
+		<param name="publish_rate" value="10.0"/>
+		<param name="clear_rate" value="1.0"/>
+		<param name="global_map_resolution" value="0.01"/>
+		<param name="origin_x" value="0.0"/>
+		<param name="origin_y" value="0.0"/>
+		<param name="use_max_occupancy" value="true"/>
+		<param name="max_allowed_distance" value="0.1"/>
+	</node-->	
+
+</launch>
+

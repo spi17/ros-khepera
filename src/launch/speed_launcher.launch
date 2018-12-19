@@ -1,0 +1,13 @@
+<launch>
+
+	<node name="keyboard_to_twist_node" pkg="speed_keyboard" type="keyboard_to_twist_node"/>
+
+	<node name="speed_controller" pkg="speed_controller" type="speed_controller" output="screen"/>
+
+	<node name="speed_sensor" pkg="speed_sensor" args="3092 khepera" type="speed_sensor"/>
+
+	<node name="speed_recorder" pkg="speed_recorder" type="speed_recorder"/>
+
+	<!--node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" output="screen" /-->
+
+</launch>

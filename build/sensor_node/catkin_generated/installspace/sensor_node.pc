@@ -1,0 +1,8 @@
+prefix=/home/santi/khepera_ws/install
+
+Name: sensor_node
+Description: Description of sensor_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/santi/khepera_ws/install/lib 
+Requires: 

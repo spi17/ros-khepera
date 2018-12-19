@@ -1,0 +1,8 @@
+prefix=/home/santi/khepera_ws/install
+
+Name: base_controller
+Description: Description of base_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/santi/khepera_ws/install/lib 
+Requires: 

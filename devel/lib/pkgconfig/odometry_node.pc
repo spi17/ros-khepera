@@ -1,0 +1,8 @@
+prefix=/home/santi/khepera_ws/devel
+
+Name: odometry_node
+Description: Description of odometry_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/santi/khepera_ws/devel/lib 
+Requires: 

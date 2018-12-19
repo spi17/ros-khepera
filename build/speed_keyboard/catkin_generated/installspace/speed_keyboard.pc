@@ -1,0 +1,8 @@
+prefix=/home/santi/khepera_ws/install
+
+Name: speed_keyboard
+Description: Description of speed_keyboard
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/santi/khepera_ws/install/lib 
+Requires: 

@@ -1,0 +1,12 @@
+obstacle_range: 0.22
+raytrace_range: 0.22
+robot_radius: 0.07
+inflation_radius: 0.12
+planner_frequency: 1.0
+
+observation_sources: laser_scan_sensorIR
+
+laser_scan_sensorIR: {sensor_frame: base_laser, data_type: LaserScan, topic: scan, marking: true, clearing: false, observation_persistence: 10.0}
+
+#cost_scaling_factor: 1.0
+cost_scaling_factor: 0.01

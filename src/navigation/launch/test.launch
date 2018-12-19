@@ -1,0 +1,25 @@
+<launch>
+
+<node pkg="base_controller" type="base_controller" args="192.168.1.2 3090" name="base_controller">
+		<!--remap from="cmd_vel" to="/cmd_vel" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" -->
+</node>
+
+<node pkg="sensor_node" type="sensor_node" args="3091 khepera"  name="sensor_node">	
+		<!--remap from="scan" to="/scan_IR" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" /-->
+</node>
+
+<node pkg="dead_reckoning" type="dead_reckoning" args="3093 khepera" name="dead_reckoning" output="screen">
+		<!--remap from="pose" to="/pose" -->
+</node>
+
+<node pkg="gamepad_joy_cmd" type="gamepad_robot_node" name="gamepad_robot_node">	
+		<!--remap from="scan" to="/scan_IR" >
+		<remap from="base_link" to="/base_link" >
+		<remap from="base_laser" to="/base_laser" /-->
+</node>
+
+</launch>
