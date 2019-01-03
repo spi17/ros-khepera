@@ -1,0 +1,7 @@
+<launch>
+	
+	<node name="speed_path_controller" pkg="speed_path_controller" args="1" type="speed_path_controller" output="screen"/>
+
+	<node name="speed_recorder" pkg="speed_recorder" type="speed_recorder"/>
+
+</launch>

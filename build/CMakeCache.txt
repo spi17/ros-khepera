@@ -428,6 +428,12 @@ speed_keyboard_BINARY_DIR:STATIC=/home/santi/khepera_ws/build/speed_keyboard
 speed_keyboard_SOURCE_DIR:STATIC=/home/santi/khepera_ws/src/speed_keyboard
 
 //Value Computed by CMake
+speed_path_controller_BINARY_DIR:STATIC=/home/santi/khepera_ws/build/speed_path_controller
+
+//Value Computed by CMake
+speed_path_controller_SOURCE_DIR:STATIC=/home/santi/khepera_ws/src/speed_path_controller
+
+//Value Computed by CMake
 speed_recorder_BINARY_DIR:STATIC=/home/santi/khepera_ws/build/speed_recorder
 
 //Value Computed by CMake
@@ -574,7 +580,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -53,6 +53,14 @@
 /home/santi/khepera_ws/build/speed_keyboard/CMakeFiles/twist_to_joy_node.dir
 /home/santi/khepera_ws/build/speed_keyboard/CMakeFiles/install/strip.dir
 /home/santi/khepera_ws/build/speed_keyboard/CMakeFiles/install/local.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/list_install_components.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/install.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/rebuild_cache.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/edit_cache.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/speed_path_controller.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/install/strip.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/install/local.dir
+/home/santi/khepera_ws/build/speed_path_controller/CMakeFiles/test.dir
 /home/santi/khepera_ws/build/simple_navigation_goals/CMakeFiles/list_install_components.dir
 /home/santi/khepera_ws/build/simple_navigation_goals/CMakeFiles/install.dir
 /home/santi/khepera_ws/build/simple_navigation_goals/CMakeFiles/actionlib_generate_messages_py.dir

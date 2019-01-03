@@ -1,0 +1,7 @@
+<launch>
+
+	<node name="speed_controller" pkg="speed_controller" type="speed_controller"/>
+
+	<node name="speed_sensor" pkg="speed_sensor" args="3092 khepera" type="speed_sensor"/>
+
+</launch>

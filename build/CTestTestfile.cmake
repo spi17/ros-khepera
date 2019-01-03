@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(speed_keyboard)
+subdirs(speed_path_controller)
 subdirs(simple_navigation_goals)
 subdirs(base_controller)
 subdirs(dead_reckoning)

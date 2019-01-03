@@ -517,6 +517,19 @@ twist_to_joy_node/fast:
 .PHONY : twist_to_joy_node/fast
 
 #=============================================================================
+# Target rules for targets named speed_path_controller
+
+# Build rule for target.
+speed_path_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 speed_path_controller
+.PHONY : speed_path_controller
+
+# fast build rule for target.
+speed_path_controller/fast:
+	$(MAKE) -f speed_path_controller/CMakeFiles/speed_path_controller.dir/build.make speed_path_controller/CMakeFiles/speed_path_controller.dir/build
+.PHONY : speed_path_controller/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -1219,6 +1232,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... keyboard_to_twist_node"
 	@echo "... twist_to_joy_node"
+	@echo "... speed_path_controller"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"

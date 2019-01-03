@@ -1,2 +1,2 @@
-base_controller:dead_reckoning:gamepad_joy_cmd:odometry_node:sensor_node:simple_navigation_goals:speed_controller:speed_keyboard:speed_recorder:speed_sensor:ultrasound_node
+base_controller:dead_reckoning:gamepad_joy_cmd:odometry_node:sensor_node:simple_navigation_goals:speed_controller:speed_keyboard:speed_path_controller:speed_recorder:speed_sensor:ultrasound_node
 -DCATKIN_DEVEL_PREFIX=/home/santi/khepera_ws/devel -DCMAKE_INSTALL_PREFIX=/home/santi/khepera_ws/install -G Unix Makefiles

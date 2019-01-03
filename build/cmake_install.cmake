@@ -118,6 +118,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/santi/khepera_ws/build/gtest/cmake_install.cmake")
   include("/home/santi/khepera_ws/build/speed_keyboard/cmake_install.cmake")
+  include("/home/santi/khepera_ws/build/speed_path_controller/cmake_install.cmake")
   include("/home/santi/khepera_ws/build/simple_navigation_goals/cmake_install.cmake")
   include("/home/santi/khepera_ws/build/base_controller/cmake_install.cmake")
   include("/home/santi/khepera_ws/build/dead_reckoning/cmake_install.cmake")
